@@ -15,7 +15,7 @@
           <div class="brand-mark">GH</div>
           <div>
             <p class="brand-kicker">Преміальний догляд</p>
-            <h1 class="brand-title">Good Hair</h1>
+            <h1 class="brand-title">Hair Cosmetics</h1>
           </div>
         </div>
         <nav class="nav" aria-label="Головна навігація">
@@ -148,6 +148,7 @@
                 <span>Саліцилат</span><span>М'які кислоти</span><span>Кофеїн</span>
               </div>
               <div class="product-actions">
+                <button class="btn primary ghost order-btn" data-product="Пілінг для шкіри голови — Peeling (100 мл)">Замовити</button>
                 <a class="link" href="#delivery">Умови доставки</a>
                 <button class="share-btn" data-title="Пілінг Good Hair — Peeling" data-hash="#product-peeling">Поділитись</button>
               </div>
@@ -171,6 +172,7 @@
                 <span>Пантенол</span><span>М'ята</span><span>Охолоджуючий ефект</span>
               </div>
               <div class="product-actions">
+                <button class="btn primary ghost order-btn" data-product="Лосьйон — Anti-Dandruff (100 мл)">Замовити</button>
                 <a class="link" href="#delivery">Умови доставки</a>
                 <button class="share-btn" data-title="Лосьйон Good Hair — Anti-Dandruff" data-hash="#product-lotion">Поділитись</button>
               </div>
@@ -194,6 +196,7 @@
                 <span>Біотин</span><span>Цинк</span><span>Комплекс B</span>
               </div>
               <div class="product-actions">
+                <button class="btn primary ghost order-btn" data-product="Вітаміни — Hair Care Caps (30 капсул)">Замовити</button>
                 <a class="link" href="#delivery">Умови доставки</a>
                 <button class="share-btn" data-title="Вітаміни Good Hair — Hair Care Caps" data-hash="#product-caps">Поділитись</button>
               </div>
@@ -270,23 +273,23 @@
       </div>
     </section>
 
-    <!-- FORM -->
-    <section class="form-section" id="form" aria-label="Форма зворотного зв'язку">
+    <!-- FORM + CONTACT -->
+    <section class="form-section" id="contact" aria-label="Форма зворотного зв'язку та контакти">
       <div class="container form-inner">
-        <div class="form-card">
+        <div class="form-card" id="form">
           <p class="pill">Зв'яжіться з нами</p>
           <h3>Залиште заявку</h3>
           <p class="muted">Бажаєте консультацію або оформити замовлення? Залиште контакт — ми зв'яжемося.</p>
 
           <form id="contactForm" novalidate>
             <label for="name">Ваше ім'я</label>
-            <input id="name" name="name" type="text" placeholder="Чиж Кароліна" />
+            <input id="name" name="name" type="text" placeholder="Введите имя" />
 
             <label for="phone">Телефон <span class="required">*</span></label>
-            <input id="phone" name="phone" type="tel" placeholder="+380 68 123 45 67" required aria-required="true" />
+            <input id="phone" name="phone" type="tel" placeholder="Введите телефон" required aria-required="true" />
 
             <label for="message">Коментар (необов'язково)</label>
-            <textarea id="message" name="message" rows="4" placeholder="Коротко опишіть запит"></textarea>
+            <textarea id="message" name="message" rows="4" placeholder="Введите комментарий"></textarea>
 
             <div class="policy-row">
               <input id="policy" name="policy" type="checkbox" />
@@ -299,28 +302,25 @@
 
           <p class="privacy">Ми зберігаємо контакт лише для зв'язку щодо вашої заявки.</p>
         </div>
-      </div>
-    </section>
 
-    <!-- CONTACT / FOOTER -->
-    <footer class="site-footer" id="contact" aria-label="Контакти">
-      <div class="container footer-inner">
-        <div class="contact-card">
-          <div class="avatar">
-            <img src="images/karolina.jpg" alt="Фото контакту — Чиж Кароліна">
+        <aside class="contact-stack" aria-labelledby="contactHeading">
+          <div class="contact-card">
+            <div class="avatar">
+              <img src="images/karolina.jpg" alt="Фото контакту — Чиж Кароліна">
+            </div>
+            <div>
+              <p class="pill">Підтримка</p>
+              <h4 id="contactHeading">Контакти</h4>
+              <p class="contact-name">Чиж Кароліна</p>
+              <p class="contact-phone">Телефон: <a href="tel:+380685898498">+380 68 589 84 98</a></p>
+              <p class="contact-email">E-mail: <a href="mailto:haircosmeticskarolina@gmail.com">haircosmeticskarolina@gmail.com</a></p>
+            </div>
           </div>
-          <div>
-            <h4>Контакти</h4>
-            <p class="contact-name">Чиж Кароліна</p>
-            <p class="contact-phone">Телефон: <a href="tel:+380685898498">+380 68 589 84 98</a></p>
-            <p class="contact-email">E-mail: <a href="mailto:haircosmeticskarolina@gmail.com">haircosmeticskarolina@gmail.com</a></p>
-          </div>
-        </div>
 
-        <div class="footer-legal">
-          <h5>Юридична інформація</h5>
-          <p class="muted">Фізична особа-підприємець Чиж Кароліна Андріївна (РНОКПП 3722907285), яка діє на підставі запису в ЄДР про реєстрацію ФОП від 26.09.2025 року № 2010350000000885815</p>
-          <pre class="legal-pre">
+          <div class="info-card">
+            <h5>Юридична інформація</h5>
+            <p class="muted">Фізична особа-підприємець Чиж Кароліна Андріївна (РНОКПП 3722907285), яка діє на підставі запису в ЄДР про реєстрацію ФОП від 26.09.2025 року № 2010350000000885815</p>
+            <pre class="legal-pre">
 ФОП Чиж Кароліна Андріївна
 Платник єдиного податку (2 група)
 РНОКПП 3722907285
@@ -328,10 +328,14 @@
 р/р UA603220010000026003360042346
 ПАТ «Унiверсал Банк»
 Тел. +38 (068) 589-84-98
-          </pre>
-        </div>
+            </pre>
+          </div>
+        </aside>
       </div>
+    </section>
 
+    <!-- FOOTER -->
+    <footer class="site-footer" id="footer" aria-label="Контакти та примітки">
       <div class="container">
         <div class="footer-note">
           <p>Продавець: ФОП Чиж Кароліна Андріївна</p>
@@ -379,6 +383,35 @@
         </ul>
 
         <p>Щоб реалізувати права, зверніться на <a href="mailto:haircosmeticskarolina@gmail.com">haircosmeticskarolina@gmail.com</a>. Запити опрацьовуються у межах строків, визначених законодавством України.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Order modal -->
+  <div id="orderModal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="orderTitle" tabindex="-1">
+    <div class="modal-overlay" data-close="true"></div>
+    <div class="modal-content" role="document">
+      <button class="modal-close" aria-label="Закрити" data-close="true">&times;</button>
+      <h3 id="orderTitle">Замовити продукт</h3>
+      <div class="modal-body order-body">
+        <div class="order-product" id="orderProductLabel">Оберіть товар, щоб оформити замовлення</div>
+        <form id="orderForm" novalidate>
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="orderName">Ваше ім'я</label>
+              <input id="orderName" name="orderName" type="text" placeholder="Введите имя" required aria-required="true" />
+            </div>
+            <div class="form-field">
+              <label for="orderPhone">Телефон <span class="required">*</span></label>
+              <input id="orderPhone" name="orderPhone" type="tel" placeholder="Введите телефон" required aria-required="true" />
+            </div>
+          </div>
+          <label for="orderMessage">Коментар (необов'язково)</label>
+          <textarea id="orderMessage" name="orderMessage" rows="4" placeholder="Введите комментарий"></textarea>
+          <input type="hidden" id="orderProduct" name="orderProduct" />
+          <button type="submit" class="btn primary">Замовити</button>
+          <p id="orderFeedback" class="feedback" role="status" aria-live="polite"></p>
+        </form>
       </div>
     </div>
   </div>
