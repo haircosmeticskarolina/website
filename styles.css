@@ -215,7 +215,7 @@ a { color: inherit; }
 }
 .form-card textarea { resize: vertical; min-height: 110px; }
 .form-card .required { color: #f79b9b; }
-.policy-row { display: grid; grid-template-columns: 20px 1fr; gap: 10px; align-items: start; margin-top: 8px; color: var(--muted); }
+.policy-row { display: grid; grid-template-columns: 20px 1fr; gap: 10px; align-items: start; margin-top: 16px; color: var(--muted); }
 .policy-row a { color: var(--text); }
 .feedback { margin: 8px 0 0; font-size: 14px; min-height: 18px; }
 .privacy { color: var(--muted); margin: 0; font-size: 14px; }
