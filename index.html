@@ -5,232 +5,313 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Good Hair — Догляд, що змінює вигляд</title>
   <link rel="stylesheet" href="styles.css" />
-  <meta name="description" content="Професійні засоби для догляду за волоссям — пілінг, лосьйон, шампунь та комплекс вітамінів.">
+  <meta name="description" content="Професійні засоби для догляду за волоссям — пілінг, лосьйон, шампунь та комплекс вітамінів." />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand">
-        <h1 class="brand-title">Good Hair</h1>
-        <p class="brand-sub">Преміальний догляд за волоссям</p>
-      </div>
-      <nav class="nav">
-        <a href="#products">Продукція</a>
-        <a href="#delivery">Доставка</a>
-        <a href="#contact">Контакти</a>
-        <a href="#form" class="cta small">Залишити заявку</a>
-      </nav>
-    </div>
-  </header>
-
-  <!-- HERO -->
-  <section class="hero" id="home" aria-label="Головний екран">
-    <div class="container hero-inner">
-      <div class="hero-content">
-        <h2 class="hero-title">Good Hair: Догляд, що змінює вигляд.</h2>
-        <p class="hero-lead">Відчуйте преміальний результат щодня — натуральні інгредієнти, видимий ефект та здорове сяйво.</p>
-        <a href="#form" class="cta">Бажаєте консультацію?</a>
-      </div>
-      <div class="hero-image" role="img" aria-label="Головне зображення — блискуче волосся">
-        <img src="images/hero.jpg" alt="Модель з блискучим волоссям — головне зображення">
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA strip -->
-  <section class="cta-strip">
-    <div class="container cta-strip-inner">
-      <div class="cta-card">
-        <h4>Оформляйте заявку</h4>
-        <p class="muted">Залиште контакти — підберемо догляд під вашу проблему.</p>
-        <button class="cta cta-apply">Оформити заявку</button>
-      </div>
-      <div class="cta-card">
-        <h4>Оформляйте консультацію</h4>
-        <p class="muted">Індивідуальна консультація з підбору курсу догляду.</p>
-        <button class="cta cta-consult">Оформити консультацію</button>
-      </div>
-    </div>
-  </section>
-
-  <!-- BENEFITS -->
-  <section class="benefits" id="benefits" aria-label="Переваги продукції">
-    <div class="container">
-      <h3 class="section-title">Ваше волосся заслуговує найкращого.</h3>
-      <ul class="benefit-list">
-        <li><strong>Природна сила</strong><p>Натуральні екстракти для щоденного догляду.</p></li>
-        <li><strong>Видимий результат</strong><p>Зволоження й відновлення структури волосся.</p></li>
-        <li><strong>Сяйво та об'єм</strong><p>Волосся виглядає здоровішим і густішим.</p></li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- PRODUCTS -->
-  <section class="products" id="products" aria-label="Зображення продукції">
-    <div class="container">
-      <h3 class="section-title">Наша продукція</h3>
-      <p class="muted">Фотографії товарів (без вказання цін). Нижче — детальні описи.</p>
-
-      <!-- Product: Peeling -->
-      <div class="product-detail" id="product-peeling">
-        <div class="product-media">
-          <img src="images/peeling.jpg" alt="Пілінг для шкіри голови — Good Hair Peeling">
-        </div>
-        <div class="product-info">
-          <h4>Пілінг для шкіри голови — Peeling (100 мл)</h4>
-          <div class="product-actions">
-            <a class="link" href="#delivery">Умови доставки</a>
-            <button class="share-btn" data-title="Пілінг Good Hair — Peeling" data-hash="#product-peeling">Поділитись</button>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <div class="brand-mark">GH</div>
+          <div>
+            <p class="brand-kicker">Преміальний догляд</p>
+            <h1 class="brand-title">Good Hair</h1>
           </div>
-          <div class="product-description">
-            <h5>Опис</h5>
-            <p>Глибоке очищення, відлущення ороговілих частинок, тонізуючий ефект і стимуляція мікроциркуляції.</p>
-            <h5>Як використовувати</h5>
-            <p>Нанести на шкіру голови, витримати 5–10 хвилин, змити та помити шампунем.</p>
+        </div>
+        <nav class="nav" aria-label="Головна навігація">
+          <a href="#products">Продукція</a>
+          <a href="#delivery">Доставка</a>
+          <a href="#contact">Контакти</a>
+          <a href="#form" class="btn ghost">Залишити заявку</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="home" aria-label="Головний екран">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <div class="pill">Догляд, що працює</div>
+          <h2 class="hero-title">Good Hair: чистота, сила і сяйво щодня.</h2>
+          <p class="hero-lead">Натуральні екстракти, науково підтверджені формули та видимий результат для волосся, яке привертає увагу.</p>
+          <div class="hero-actions">
+            <a href="#form" class="btn primary">Підібрати догляд</a>
+            <a href="#products" class="btn ghost">Переглянути продукти</a>
+          </div>
+          <div class="hero-meta">
+            <div><span class="dot"></span>Професійні рецептури</div>
+            <div><span class="dot"></span>Безпечно для чутливої шкіри</div>
+            <div><span class="dot"></span>Доставка по всій Україні</div>
+          </div>
+        </div>
+        <div class="hero-visual" role="img" aria-label="Головне зображення — блискуче волосся">
+          <div class="hero-card">
+            <img src="images/hero.jpg" alt="Модель з блискучим волоссям — головне зображення">
+            <div class="hero-stats">
+              <div>
+                <p class="stat-label">Natural care</p>
+                <p class="stat-value">96%</p>
+              </div>
+              <div>
+                <p class="stat-label">Visible shine</p>
+                <p class="stat-value">14 днів</p>
+              </div>
+              <div>
+                <p class="stat-label">Customers</p>
+                <p class="stat-value">5 000+</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- Product: Lotion Anti-Dandruff -->
-      <div class="product-detail" id="product-lotion">
-        <div class="product-media">
-          <img src="images/dandruff.jpg" alt="Лосьйон Good Hair — Anti-Dandruff">
-        </div>
-        <div class="product-info">
-          <h4>Лосьйон — Anti-Dandruff (100 мл)</h4>
-          <div class="product-actions">
-            <a class="link" href="#delivery">Умови доставки</a>
-            <button class="share-btn" data-title="Лосьйон Good Hair — Anti-Dandruff" data-hash="#product-lotion">Поділитись</button>
-          </div>
-          <div class="product-description">
-            <h5>Опис</h5>
-            <p>Заспокоює шкіру, зменшує лущення, освіжає і нормалізує себум.</p>
-            <h5>Спосіб застосування</h5>
-            <p>Наноситься на суху чисту шкіру голови — розподілити легким масажем, не змивати.</p>
-          </div>
-        </div>
+    <!-- CTA strip -->
+    <section class="cta-strip">
+      <div class="container cta-grid">
+        <article class="cta-card">
+          <div class="pill">01</div>
+          <h3>Оформіть заявку</h3>
+          <p class="muted">Залиште контакти — підберемо персональний курс догляду під вашу задачу.</p>
+          <button class="btn primary cta-apply">Оформити заявку</button>
+        </article>
+        <article class="cta-card">
+          <div class="pill">02</div>
+          <h3>Заплануйте консультацію</h3>
+          <p class="muted">Онлайн-консультація з детальним планом відновлення волосся.</p>
+          <button class="btn ghost cta-consult">Оформити консультацію</button>
+        </article>
       </div>
+    </section>
 
-      <!-- Product: Hair Care Caps -->
-      <div class="product-detail" id="product-caps">
-        <div class="product-media">
-          <img src="images/caps.jpg" alt="Вітаміни Hair Care Caps — Good Hair">
-        </div>
-        <div class="product-info">
-          <h4>Вітаміни — Hair Care Caps (30 капсул)</h4>
-          <div class="product-actions">
-            <a class="link" href="#delivery">Умови доставки</a>
-            <button class="share-btn" data-title="Вітаміни Good Hair — Hair Care Caps" data-hash="#product-caps">Поділитись</button>
-          </div>
-          <div class="product-description">
-            <h5>Опис</h5>
-            <p>Комплекс вітамінів для зміцнення цибулин і стимуляції росту волосся.</p>
-            <h5>Як приймати</h5>
-            <p>По 1 капсулі вранці щодня, курс від 1 місяця залежно від потреби.</p>
+    <!-- BENEFITS -->
+    <section class="benefits" id="benefits" aria-label="Переваги продукції">
+      <div class="container">
+        <div class="section-head">
+          <p class="pill">Чому Good Hair</p>
+          <div>
+            <h3 class="section-title">Ваше волосся заслуговує найкращого.</h3>
+            <p class="muted">Тільки активні компоненти, які працюють разом — без компромісів у якості та безпеці.</p>
           </div>
         </div>
+        <div class="benefit-grid">
+          <article class="benefit-card">
+            <div class="icon">🌿</div>
+            <h4>Природна сила</h4>
+            <p>Натуральні екстракти для щоденного догляду та балансу шкіри голови.</p>
+          </article>
+          <article class="benefit-card">
+            <div class="icon">✨</div>
+            <h4>Видимий результат</h4>
+            <p>Зволоження й відновлення структури — волосся еластичне, блискуче та слухняне.</p>
+          </article>
+          <article class="benefit-card">
+            <div class="icon">🌊</div>
+            <h4>Сяйво та об'єм</h4>
+            <p>Формули, що додають густини, об'єму та природного сяйва без обтяження.</p>
+          </article>
+        </div>
       </div>
+    </section>
 
-    </div>
-  </section>
-
-  <!-- Decorative: Shampoo -->
-  <section class="deco-shampoo" aria-label="Декоративна секція — Shampoo">
-    <div class="deco-shampoo-inner container">
-      <div class="shampoo-card">
-        <h3>Hair Shampoo with Kopyrrol</h3>
-        <p class="lead">Щоденний шампунь для зміцнення фолікулів і активації росту.</p>
-        <a href="#products" class="cta">Дізнатись більше</a>
-      </div>
-      <div class="shampoo-image">
-        <img src="images/shampoo.jpg" alt="Shampoo with Kopyrrol — упаковка і флакон">
-      </div>
-    </div>
-  </section>
-
-  <!-- Decorative banner (Anti-Dandruff) -->
-  <section class="deco-banner" aria-label="Декоративний банер — Anti-Dandruff">
-    <div class="deco-inner container">
-      <div class="deco-text">
-        <h3>HAIR LOTION</h3>
-        <h2>ANTI-DANDRUFF</h2>
-        <p class="muted">Спеціальний лосьйон для боротьби з лупою та відновлення комфорту шкіри голови.</p>
-        <a href="#product-lotion" class="cta">Деталі продукту</a>
-      </div>
-      <div class="deco-image">
-        <img src="images/dandruff.jpg" alt="Anti-Dandruff — декоративний банер">
-      </div>
-    </div>
-  </section>
-
-  <!-- DELIVERY (Нова Пошта) -->
-  <section class="delivery" id="delivery" aria-label="Умови доставки">
-    <div class="container">
-      <h3 class="section-title">Умови доставки — Нова Пошта</h3>
-      <div class="delivery-card">
-        <p>Доставка здійснюється службою «Нова Пошта» по всій території України.</p>
-        <ul>
-          <li><strong>Термін обробки замовлення:</strong> зазвичай 1 робочий день після підтвердження.</li>
-          <li><strong>Час доставки:</strong> 1–3 робочих дні (залежно від віддаленості).</li>
-          <li><strong>Спосіб доставки:</strong> до відділення або кур'єрська доставка на адресу.</li>
-          <li><strong>Відстеження:</strong> ми надамо номер ТТН після відправлення.</li>
-          <li><strong>Зауваження:</strong> перевіряйте контактні дані — ми не несемо відповідальності за помилки у введеній адресі.</li>
-        </ul>
-        <p class="muted">Питання щодо доставки: <a href="mailto:haircosmeticskarolina@gmail.com">haircosmeticskarolina@gmail.com</a></p>
-      </div>
-    </div>
-  </section>
-
-  <!-- FORM -->
-  <section class="form-section" id="form" aria-label="Форма зворотного зв'язку">
-    <div class="container form-inner">
-      <div class="form-card">
-        <h3>Залиште заявку</h3>
-        <p class="muted">Бажаєте консультацію або оформити замовлення? Залиште контакт — ми зв'яжемося.</p>
-
-        <form id="contactForm" novalidate>
-          <label for="name">Ваше ім'я</label>
-          <input id="name" name="name" type="text" placeholder="Чиж Кароліна" />
-
-          <label for="phone">Телефон <span class="required">*</span></label>
-          <input id="phone" name="phone" type="tel" placeholder="+380 68 123 45 67" required aria-required="true" />
-
-          <label for="message">Коментар (необов'язково)</label>
-          <textarea id="message" name="message" rows="4" placeholder="Коротко опишіть запит"></textarea>
-
-          <div class="policy-row">
-            <input id="policy" name="policy" type="checkbox" />
-            <label for="policy">Я погоджуюсь на обробку персональних даних згідно з <a href="#" id="openPolicy">Політикою обробки персональних даних</a> <span class="required">*</span></label>
+    <!-- PRODUCTS -->
+    <section class="products" id="products" aria-label="Зображення продукції">
+      <div class="container">
+        <div class="section-head">
+          <p class="pill">Продукція</p>
+          <div>
+            <h3 class="section-title">Професійний набір для щоденного догляду</h3>
+            <p class="muted">Фотографії товарів (без вказання цін). Деталі та інструкції — у картках нижче.</p>
           </div>
+        </div>
 
-          <button type="submit" class="cta">Надіслати</button>
-          <p id="formFeedback" class="feedback" role="status" aria-live="polite"></p>
-        </form>
+        <div class="product-grid">
+          <!-- Product: Peeling -->
+          <article class="product-card" id="product-peeling">
+            <div class="product-media">
+              <img src="images/peeling.jpg" alt="Пілінг для шкіри голови — Good Hair Peeling">
+              <span class="badge">Для чистої шкіри</span>
+            </div>
+            <div class="product-body">
+              <h4>Пілінг для шкіри голови — Peeling (100 мл)</h4>
+              <p class="muted">Глибоке очищення, тонізуючий ефект і стимуляція мікроциркуляції.</p>
+              <div class="chips">
+                <span>Саліцилат</span><span>М'які кислоти</span><span>Кофеїн</span>
+              </div>
+              <div class="product-actions">
+                <a class="link" href="#delivery">Умови доставки</a>
+                <button class="share-btn" data-title="Пілінг Good Hair — Peeling" data-hash="#product-peeling">Поділитись</button>
+              </div>
+              <div class="product-description">
+                <h5>Як використовувати</h5>
+                <p>Нанести на шкіру голови, витримати 5–10 хвилин, змити та помити шампунем.</p>
+              </div>
+            </div>
+          </article>
 
-        <p class="privacy">Ми зберігаємо контакт лише для зв'язку щодо вашої заявки.</p>
+          <!-- Product: Lotion Anti-Dandruff -->
+          <article class="product-card" id="product-lotion">
+            <div class="product-media">
+              <img src="images/dandruff.jpg" alt="Лосьйон Good Hair — Anti-Dandruff">
+              <span class="badge">Анти-лупа</span>
+            </div>
+            <div class="product-body">
+              <h4>Лосьйон — Anti-Dandruff (100 мл)</h4>
+              <p class="muted">Заспокоює шкіру, зменшує лущення, освіжає і нормалізує себум.</p>
+              <div class="chips">
+                <span>Пантенол</span><span>М'ята</span><span>Охолоджуючий ефект</span>
+              </div>
+              <div class="product-actions">
+                <a class="link" href="#delivery">Умови доставки</a>
+                <button class="share-btn" data-title="Лосьйон Good Hair — Anti-Dandruff" data-hash="#product-lotion">Поділитись</button>
+              </div>
+              <div class="product-description">
+                <h5>Спосіб застосування</h5>
+                <p>Наноситься на суху чисту шкіру голови — розподілити легким масажем, не змивати.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product: Hair Care Caps -->
+          <article class="product-card" id="product-caps">
+            <div class="product-media">
+              <img src="images/caps.jpg" alt="Вітаміни Hair Care Caps — Good Hair">
+              <span class="badge">Зсередини</span>
+            </div>
+            <div class="product-body">
+              <h4>Вітаміни — Hair Care Caps (30 капсул)</h4>
+              <p class="muted">Комплекс вітамінів для зміцнення цибулин і стимуляції росту волосся.</p>
+              <div class="chips">
+                <span>Біотин</span><span>Цинк</span><span>Комплекс B</span>
+              </div>
+              <div class="product-actions">
+                <a class="link" href="#delivery">Умови доставки</a>
+                <button class="share-btn" data-title="Вітаміни Good Hair — Hair Care Caps" data-hash="#product-caps">Поділитись</button>
+              </div>
+              <div class="product-description">
+                <h5>Як приймати</h5>
+                <p>По 1 капсулі вранці щодня, курс від 1 місяця залежно від потреби.</p>
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CONTACT / FOOTER -->
-  <footer class="site-footer" id="contact" aria-label="Контакти">
-    <div class="container footer-inner">
-      <div class="contact-card">
-        <h4>Контакти</h4>
-        <div class="contact-row">
-          <img class="contact-photo" src="images/karolina.jpg" alt="Фото контакту — Чиж Кароліна">
-          <div class="contact-info">
+    <!-- Decorative: Shampoo -->
+    <section class="highlight" aria-label="Шампунь Good Hair">
+      <div class="container highlight-inner">
+        <div class="highlight-text">
+          <p class="pill">Щоденний догляд</p>
+          <h3>Hair Shampoo with Kopyrrol</h3>
+          <p class="lead">Щоденний шампунь для зміцнення фолікулів, м'якого очищення та активації росту.</p>
+          <div class="chips">
+            <span>Сульфат-free</span><span>Гладкість</span><span>Легке розчісування</span>
+          </div>
+          <a href="#products" class="btn ghost">Дізнатись більше</a>
+        </div>
+        <div class="highlight-visual">
+          <div class="floating-card">
+            <img src="images/shampoo.jpg" alt="Shampoo with Kopyrrol — упаковка і флакон">
+            <div class="floating-note">Формула на щодень</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Decorative banner (Anti-Dandruff) -->
+    <section class="split-banner" aria-label="Декоративний банер — Anti-Dandruff">
+      <div class="container split-inner">
+        <div class="split-text">
+          <h3>HAIR LOTION</h3>
+          <h2>ANTI-DANDRUFF</h2>
+          <p class="muted">Спеціальний лосьйон для боротьби з лупою та відновлення комфорту шкіри голови.</p>
+          <a href="#product-lotion" class="btn primary">Деталі продукту</a>
+        </div>
+        <div class="split-visual">
+          <img src="images/dandruff.jpg" alt="Anti-Dandruff — декоративний банер">
+        </div>
+      </div>
+    </section>
+
+    <!-- DELIVERY (Нова Пошта) -->
+    <section class="delivery" id="delivery" aria-label="Умови доставки">
+      <div class="container">
+        <div class="section-head">
+          <p class="pill">Доставка</p>
+          <h3 class="section-title">Умови доставки — Нова Пошта</h3>
+        </div>
+        <div class="delivery-board">
+          <div class="delivery-text">
+            <p>Доставка здійснюється службою «Нова Пошта» по всій території України.</p>
+            <ul>
+              <li><strong>Термін обробки:</strong> 1 робочий день після підтвердження.</li>
+              <li><strong>Час доставки:</strong> 1–3 робочих дні (залежно від віддаленості).</li>
+              <li><strong>Спосіб доставки:</strong> до відділення або кур'єрська доставка на адресу.</li>
+              <li><strong>Відстеження:</strong> надаємо номер ТТН після відправлення.</li>
+              <li><strong>Зауваження:</strong> перевіряйте контактні дані — ми не несемо відповідальності за помилки у введеній адресі.</li>
+            </ul>
+          </div>
+          <div class="delivery-extra">
+            <p class="muted">Питання щодо доставки:</p>
+            <a href="mailto:haircosmeticskarolina@gmail.com" class="link">haircosmeticskarolina@gmail.com</a>
+            <div class="badge muted">Служба підтримки</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORM -->
+    <section class="form-section" id="form" aria-label="Форма зворотного зв'язку">
+      <div class="container form-inner">
+        <div class="form-card">
+          <p class="pill">Зв'яжіться з нами</p>
+          <h3>Залиште заявку</h3>
+          <p class="muted">Бажаєте консультацію або оформити замовлення? Залиште контакт — ми зв'яжемося.</p>
+
+          <form id="contactForm" novalidate>
+            <label for="name">Ваше ім'я</label>
+            <input id="name" name="name" type="text" placeholder="Чиж Кароліна" />
+
+            <label for="phone">Телефон <span class="required">*</span></label>
+            <input id="phone" name="phone" type="tel" placeholder="+380 68 123 45 67" required aria-required="true" />
+
+            <label for="message">Коментар (необов'язково)</label>
+            <textarea id="message" name="message" rows="4" placeholder="Коротко опишіть запит"></textarea>
+
+            <div class="policy-row">
+              <input id="policy" name="policy" type="checkbox" />
+              <label for="policy">Я погоджуюсь на обробку персональних даних згідно з <a href="#" id="openPolicy">Політикою обробки персональних даних</a> <span class="required">*</span></label>
+            </div>
+
+            <button type="submit" class="btn primary">Надіслати</button>
+            <p id="formFeedback" class="feedback" role="status" aria-live="polite"></p>
+          </form>
+
+          <p class="privacy">Ми зберігаємо контакт лише для зв'язку щодо вашої заявки.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT / FOOTER -->
+    <footer class="site-footer" id="contact" aria-label="Контакти">
+      <div class="container footer-inner">
+        <div class="contact-card">
+          <div class="avatar">
+            <img src="images/karolina.jpg" alt="Фото контакту — Чиж Кароліна">
+          </div>
+          <div>
+            <h4>Контакти</h4>
             <p class="contact-name">Чиж Кароліна</p>
             <p class="contact-phone">Телефон: <a href="tel:+380685898498">+380 68 589 84 98</a></p>
             <p class="contact-email">E-mail: <a href="mailto:haircosmeticskarolina@gmail.com">haircosmeticskarolina@gmail.com</a></p>
           </div>
         </div>
-      </div>
 
-      <div class="footer-legal">
-        <h5>Юридична інформація</h5>
-        <p class="muted">Фізична особа-підприємець Чиж Кароліна Андріївна (РНОКПП 3722907285), яка діє на підставі запису в ЄДР про реєстрацію ФОП від 26.09.2025 року № 2010350000000885815</p>
-        <pre class="legal-pre">
+        <div class="footer-legal">
+          <h5>Юридична інформація</h5>
+          <p class="muted">Фізична особа-підприємець Чиж Кароліна Андріївна (РНОКПП 3722907285), яка діє на підставі запису в ЄДР про реєстрацію ФОП від 26.09.2025 року № 2010350000000885815</p>
+          <pre class="legal-pre">
 ФОП Чиж Кароліна Андріївна
 Платник єдиного податку (2 група)
 РНОКПП 3722907285
@@ -238,17 +319,18 @@
 р/р UA603220010000026003360042346
 ПАТ «Унiверсал Банк»
 Тел. +38 (068) 589-84-98
-        </pre>
+          </pre>
+        </div>
       </div>
-    </div>
 
-    <div class="container">
-      <div class="footer-note">
-        <p>Продавець: ФОП Чиж Кароліна Андріївна</p>
-        <p class="muted">Торгові марки та права на продукцію належать відповідним виробникам.</p>
+      <div class="container">
+        <div class="footer-note">
+          <p>Продавець: ФОП Чиж Кароліна Андріївна</p>
+          <p class="muted">Торгові марки та права на продукцію належать відповідним виробникам.</p>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
+  </div>
 
   <!-- Політика — модальне вікно -->
   <div id="policyModal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="policyTitle" tabindex="-1">
@@ -257,14 +339,37 @@
       <button class="modal-close" aria-label="Закрити" data-close="true">&times;</button>
       <h3 id="policyTitle">Політика обробки персональних даних</h3>
       <div class="modal-body">
-        <p>Ця Політика описує порядок і мету обробки персональних даних, які ви надаєте при оформленні заявки.</p>
-        <h4>1. Відповідальний</h4>
-        <p>ФОП Чиж Кароліна Андріївна (РНОКПП 3722907285).</p>
-        <h4>2. Збираємо</h4>
-        <p>Ім'я, телефон, e-mail, повідомлення з форми.</p>
-        <h4>3. Мета</h4>
-        <p>Зв'язок щодо замовлення та консультації.</p>
-        <p>Питання щодо політики: <a href="mailto:haircosmeticskarolina@gmail.com">haircosmeticskarolina@gmail.com</a>.</p>
+        <p>Ця політика пояснює, як ми збираємо, використовуємо та захищаємо персональні дані, які ви залишаєте на сайті при оформленні заявки чи зверненні.</p>
+
+        <h4>1. Відповідальний та контакт</h4>
+        <p>Оператор: ФОП Чиж Кароліна Андріївна (РНОКПП 3722907285). Для питань щодо даних пишіть на <a href="mailto:haircosmeticskarolina@gmail.com">haircosmeticskarolina@gmail.com</a> або телефонуйте за номером, вказаним у контактах.</p>
+
+        <h4>2. Які дані ми збираємо</h4>
+        <ul>
+          <li>Обов'язкові: ім'я, номер телефону.</li>
+          <li>Додаткові (за наявності): e-mail, текст повідомлення, технічні дані (IP-адреса, дані браузера для безпеки).</li>
+        </ul>
+
+        <h4>3. Для чого використовуємо</h4>
+        <ul>
+          <li>Щоб зв'язатися з вами щодо замовлення чи консультації.</li>
+          <li>Для виконання договірних зобов'язань та надання послуг.</li>
+          <li>Для виконання вимог законодавства (бухгалтерський облік, відповідь на запити держорганів).</li>
+          <li>Для захисту прав, запобігання шахрайству та забезпечення безпеки сайту.</li>
+        </ul>
+
+        <h4>4. Зберігання і передача</h4>
+        <p>Дані зберігаються лише стільки, скільки потрібно для цілей обробки або передбачено законом. Доступ мають лише уповноважені особи та підрядники, які забезпечують конфіденційність та безпеку. Ми не продаємо ваші дані третім особам.</p>
+
+        <h4>5. Ваші права</h4>
+        <ul>
+          <li>Отримати доступ до своїх даних та копію.</li>
+          <li>Виправити неточні дані або вимагати видалення, якщо це дозволено законом.</li>
+          <li>Обмежити обробку або заперечити проти неї у передбачених випадках.</li>
+          <li>Подати скаргу до уповноваженого органу з захисту персональних даних.</li>
+        </ul>
+
+        <p>Щоб реалізувати права, зверніться на <a href="mailto:haircosmeticskarolina@gmail.com">haircosmeticskarolina@gmail.com</a>. Запити опрацьовуються у межах строків, визначених законодавством України.</p>
       </div>
     </div>
   </div>
@@ -276,7 +381,16 @@
       <button class="modal-close" aria-label="Закрити" data-close="true">&times;</button>
       <h3 id="cookieTitle">Інформація про файли cookie</h3>
       <div class="modal-body">
-        <p>Ми використовуємо cookie для роботи сайту та аналітики. Натиснувши «Прийняти» ви даєте згоду на використання cookie.</p>
+        <p>Cookie — це невеликі текстові файли, які зберігаються у вашому браузері, щоб сайт працював стабільно та міг запам'ятовувати ваші дії.</p>
+        <h4>Які cookie застосовуємо</h4>
+        <ul>
+          <li><strong>Необхідні</strong>: забезпечують завантаження сторінок, роботу форм та безпеку. Не можуть бути вимкнені у межах сайту.</li>
+          <li><strong>Аналітичні</strong>: допомагають зрозуміти, як користувачі взаємодіють із сайтом (агреговані дані про перегляди, кліки). Використовуються для покращення контенту.</li>
+          <li><strong>Функціональні</strong>: зберігають вибір мови чи інші налаштування інтерфейсу.</li>
+        </ul>
+        <h4>Як керувати cookie</h4>
+        <p>Ви можете прийняти або відхилити необов'язкові cookie у банері. Також їх можна заблокувати чи видалити у налаштуваннях браузера (Chrome, Safari, Firefox тощо). Відмова від аналітичних cookie не впливає на базову роботу сайту.</p>
+        <p>Продовжуючи користуватись сайтом після згоди на банері, ви погоджуєтеся з використанням відповідних cookie.</p>
       </div>
     </div>
   </div>
@@ -286,7 +400,7 @@
     <div class="container cookie-inner">
       <p class="cookie-text">Цей сайт використовує файли cookie для покращення роботи та аналітики.</p>
       <div class="cookie-actions">
-        <button id="acceptCookies" class="cta small">Прийняти</button>
+        <button id="acceptCookies" class="btn primary small">Прийняти</button>
         <a href="#" id="openCookieModal" class="link">Детальніше</a>
       </div>
     </div>
