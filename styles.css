@@ -169,8 +169,9 @@ a { color: inherit; }
 .hero-title { margin: 0; font-size: clamp(28px, 4vw, 38px); line-height: 1.2; }
 .hero-lead { margin: 0; color: var(--muted); font-size: 16px; }
 .hero-actions { display: flex; gap: 10px; flex-wrap: wrap; }
-.hero-meta { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; color: var(--muted); font-size: 14px; }
-.dot { display: inline-block; width: 8px; height: 8px; background: var(--accent); border-radius: 50%; margin-right: 8px; box-shadow: 0 0 0 6px rgba(245,169,196,0.25); }
+.hero-meta { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; color: var(--muted); font-size: 14px; text-align: center; }
+.hero-meta-item { display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 10px 8px; background: rgba(255, 255, 255, 0.7); border-radius: 12px; box-shadow: 0 12px 28px rgba(255, 202, 215, 0.35); }
+.dot { display: inline-block; width: 8px; height: 8px; background: var(--accent); border-radius: 50%; margin: 0 auto 4px; box-shadow: 0 0 0 6px rgba(245, 169, 196, 0.25); }
 
 .hero-aside { display: grid; gap: 14px; align-content: start; }
 .hero-aside-head { display: grid; gap: 6px; }
@@ -251,7 +252,9 @@ a { color: inherit; }
 .form-card textarea { resize: vertical; min-height: 110px; }
 .form-card .required { color: #f79b9b; }
 .policy-row { display: grid; grid-template-columns: 20px 1fr; gap: 10px; align-items: start; margin-top: 16px; color: var(--muted); }
+.policy-row label { margin-top: 0; }
 .policy-row a { color: var(--text); }
+.contact-submit { width: 100%; }
 .feedback { margin: 8px 0 0; font-size: 14px; min-height: 18px; }
 .privacy { color: var(--muted); margin: 0; font-size: 14px; }
 
