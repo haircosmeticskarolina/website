@@ -175,8 +175,7 @@ a { color: inherit; }
 .product-body { padding: 16px; display: grid; gap: 8px; }
 .product-body h4 { margin: 0; font-size: 18px; }
 .product-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; margin-top: 4px; }
-.product-actions .order-btn { flex: 1 1 160px; min-width: 150px; }
-.product-actions .share-btn { border: 1px solid rgba(236, 194, 183, 0.8); background: #fffaf7; color: var(--text); border-radius: 12px; padding: 8px 10px; cursor: pointer; }
+.product-actions .order-btn { flex: 1 1 180px; min-width: 160px; }
 .product-description h5 { margin: 4px 0; font-size: 14px; color: var(--muted); letter-spacing: 0.01em; }
 .product-description p { margin: 0; }
 

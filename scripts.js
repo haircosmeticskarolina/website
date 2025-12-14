@@ -92,33 +92,6 @@
     });
   }
 
-  // --- Share buttons ---
-  var shareButtons = document.querySelectorAll('.share-btn');
-  shareButtons.forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      var title = btn.dataset.title || document.title;
-      var hash = btn.dataset.hash || '';
-      var url = window.location.origin + window.location.pathname + hash;
-      var text = title + ' — перегляньте на сайті';
-
-      if (navigator.share) {
-        navigator.share({ title: title, text: text, url: url }).catch(function (err) {
-          console.log('Share failed:', err);
-        });
-      } else {
-        if (navigator.clipboard && navigator.clipboard.writeText) {
-          navigator.clipboard.writeText(url).then(function () {
-            alert('Посилання скопійовано в буфер обміну:\n' + url);
-          }).catch(function () {
-            alert('Скопіюйте посилання вручну:\n' + url);
-          });
-        } else {
-          prompt('Скопіюйте посилання вручну:', url);
-        }
-      }
-    });
-  });
-
   // --- CTA ---
   function scrollToFormAndFocus() {
     var formSection = document.getElementById('form');
