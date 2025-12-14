@@ -4,6 +4,13 @@
   var phone = document.getElementById('phone');
   var feedback = document.getElementById('formFeedback');
   var policyCheckbox = document.getElementById('policy');
+  var orderButtons = document.querySelectorAll('.order-btn');
+  var orderProductInput = document.getElementById('orderProduct');
+  var orderProductLabel = document.getElementById('orderProductLabel');
+  var orderName = document.getElementById('orderName');
+  var orderPhone = document.getElementById('orderPhone');
+  var orderFeedback = document.getElementById('orderFeedback');
+  var orderForm = document.getElementById('orderForm');
 
   // --- Утиліти модалок ---
   function openModalById(id) {
@@ -50,32 +57,40 @@
     });
   }
 
-  // --- Share buttons ---
-  var shareButtons = document.querySelectorAll('.share-btn');
-  shareButtons.forEach(function (btn) {
+  // --- Модалка замовлення ---
+  orderButtons.forEach(function (btn) {
     btn.addEventListener('click', function () {
-      var title = btn.dataset.title || document.title;
-      var hash = btn.dataset.hash || '';
-      var url = window.location.origin + window.location.pathname + hash;
-      var text = title + ' — перегляньте на сайті';
-
-      if (navigator.share) {
-        navigator.share({ title: title, text: text, url: url }).catch(function (err) {
-          console.log('Share failed:', err);
-        });
-      } else {
-        if (navigator.clipboard && navigator.clipboard.writeText) {
-          navigator.clipboard.writeText(url).then(function () {
-            alert('Посилання скопійовано в буфер обміну:\n' + url);
-          }).catch(function () {
-            alert('Скопіюйте посилання вручну:\n' + url);
-          });
-        } else {
-          prompt('Скопіюйте посилання вручну:', url);
-        }
-      }
+      var product = btn.dataset.product || '';
+      if (orderProductInput) orderProductInput.value = product;
+      if (orderProductLabel) orderProductLabel.textContent = product || 'Оберіть товар, щоб оформити замовлення';
+      openModalById('orderModal');
+      if (orderName) orderName.focus();
     });
   });
+
+  if (orderForm) {
+    orderForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      if (!orderPhone || !orderPhone.value.trim()) {
+        if (orderFeedback) {
+          orderFeedback.textContent = "Будь ласка, вкажіть телефон для зв'язку.";
+          orderFeedback.style.color = '#b44';
+        }
+        if (orderPhone) orderPhone.focus();
+        return;
+      }
+
+      var productName = orderProductInput && orderProductInput.value ? orderProductInput.value : 'Без вибору продукту';
+      if (orderFeedback) {
+        orderFeedback.textContent = 'Дякуємо! Ми прийняли замовлення на: ' + productName + '. Наш менеджер скоро звʼяжеться.';
+        orderFeedback.style.color = '#2a6';
+      }
+      orderForm.reset();
+      if (orderProductLabel) orderProductLabel.textContent = 'Оберіть товар, щоб оформити замовлення';
+      if (orderProductInput) orderProductInput.value = '';
+    });
+  }
 
   // --- CTA ---
   function scrollToFormAndFocus() {
