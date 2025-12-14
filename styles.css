@@ -254,7 +254,7 @@ a { color: inherit; }
 .policy-row { display: grid; grid-template-columns: 20px 1fr; gap: 10px; align-items: start; margin-top: 16px; color: var(--muted); }
 .policy-row label { margin-top: 0; }
 .policy-row a { color: var(--text); }
-.contact-submit { width: 100%; }
+.contact-submit { width: 100%; margin-top: 15px; }
 .feedback { margin: 8px 0 0; font-size: 14px; min-height: 18px; }
 .privacy { color: var(--muted); margin: 0; font-size: 14px; }
 
